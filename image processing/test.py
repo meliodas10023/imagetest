@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 image = cv2.imread('images/ts.jpg')  # 替换为你的图像路径
 
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-blurred = cv2.GaussianBlur(image, (5, 5), 0)
-cv2.imshow('Blurred', blurred)
+
+cv2.imshow('Blurred', gray)
 cv2.waitKey(0)
 
